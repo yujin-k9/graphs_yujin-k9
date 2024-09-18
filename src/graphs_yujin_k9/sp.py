@@ -1,24 +1,18 @@
-import heapq
 import sys
+from heapq import heappush, heappop
 
-def dijkstra(graph, start):
-    distances = {vertex: sys.maxsize for vertex in graph}
-    distances[start] = 0
-    priority_queue = [(0, start)]
-    shortest_path = {}
-
-    while priority_queue:
-        current_distance, current_vertex = heapq.heappop(priority_queue)
-
-        if current_distance > distances[current_vertex]:
-            continue
-
-        for neighbor, weight in graph[current_vertex].items():
-            distance = current_distance + weight
-
-            if distance < distances[neighbor]:
-                distances[neighbor] = distance
-                shortest_path[neighbor] = current_vertex
-                heapq.heappush(priority_queue, (distance, neighbor))
-
-    return distances, shortest_path
+def dijkstra(graph, source): 
+    dist = [sys.maxsize] * len(graph)
+    dist[source] = 0
+    heap = []
+    heappush(heap, (0, source))
+    path = {}
+    path[0] = []
+    while len(heap) > 0:
+        w, u = heappop(heap)
+        for v in graph[u]:
+            if w + graph[u][v] < dist[v]:
+                dist[v] = w + graph[u][v]
+                heappush(heap, (dist[v], v))
+                path[v] = path[u] + [u]
+    return dist, path
