@@ -1,6 +1,6 @@
 # Homework 04 - Yujin 
 <p align="center">
-<img width="623" alt="Dijkstra's shortest path algorithm" src="https://github.com/user-attachments/assets/01ca5c7c-28c5-4930-9430-3184f5670694">
+<img width="500" alt="Dijkstra's shortest path algorithm" src="https://github.com/user-attachments/assets/bbf3d505-2ee3-4bb3-8a5c-a6cd02a469ea">
 </p>
 
 This project is a `Python package` that implements Dijkstra's shortest path algorithm among other graph-related algorithms. 
