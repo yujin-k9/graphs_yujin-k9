@@ -1,20 +1,12 @@
-# Graphs Yujin K9
+# Dev Branch - Graphs Yujin K9
 
-This project is a Python package that implements Dijkstra's shortest path algorithm among other graph-related algorithms. This package is designed to work with graph data structures and compute shortest paths between nodes efficiently.
+This branch is for **development purposes**. For the latest stable version, please refer to the **main branch**. The content here may be experimental or under review, so be sure to check the **README file** in the main branch for stable instructions.
 
-## Features
+## Switch to Main Branch
 
-- **Dijkstra's Algorithm**: Computes the shortest path from a source node to all other nodes.
-- Extendable for other graph algorithms in the future.
+To view the latest stable version and the official **README file**, please visit the [main branch](https://github.com/yujin-k9/graphs_yujin-k9).
 
-## Installation
+## Ongoing Work
 
-To install this package, use the following command:
-
-```bash
-pip install -e .
-```
-
-## GitHub Repository
-
-URL for your GitHub repository: https://github.com/yujin-k9/homework-04-dijkstra-s-shortest-path-yujin-k9
+- This branch may contain **ongoing development** or **testing**.
+- There could be new algorithms or improvements being worked on.
